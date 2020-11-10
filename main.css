@@ -1,0 +1,245 @@
+:root {
+    --blue: #6c63ff;
+    --darkblue: #6159f8;
+    --red: #d65555;
+    /*--white: rgb(255, 247, 247);*/
+    --white: #ffffff;
+    --darkwhite:  #fff2f2;
+    --gray: #808080;
+    --lightgray: #cac6c6;
+    --darkgray:  #b4b0b080;
+}
+
+::selection {
+    background: var(--blue);
+    color: var(--white);
+}
+
+@keyframes fadeIn {
+    from {
+        top: -5%;
+    }
+    to {
+        top: 1%;
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+
+#index_left {
+    background: var(--white);
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* filter: drop-shadow(0 0.25rem 1rem rgba(167, 164, 164, 0.5)); */
+}
+
+#index_left h3 {
+    font-family: 'Source Sans Pro';
+    color: gray;
+    filter: drop-shadow(0 0.05rem 0.05rem var(--darkgray));
+    margin-bottom: 0;
+}
+
+#index_right {
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index_photo {
+    width: 15%;
+    filter: drop-shadow(0 0.2rem 0.25rem var(--darkgray));
+}
+
+.index_register_link {
+    font-family: 'Source Sans Pro';
+    color: #808080;
+}
+
+.index_register_link a {
+    color: gray;
+}
+
+.index_register_link a:visited {
+    color: gray;
+}
+
+
+#index_form {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Sans Pro';
+    width: 70%;
+}
+
+#index_login_error {
+    background: var(--white);
+    font-family: 'Source Sans Pro';
+    color: var(--red);
+    padding-bottom: 1vh;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 1%;
+    opacity: 1;
+    animation: fadeIn 0.8s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--lightgray);
+    font-weight: 500;
+}
+
+input {
+    margin: 1vh;
+    font-family: 'Source Sans Pro';
+    border-radius: 2px;
+    border: 1px solid var(--lightgray);
+    padding: 1vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    width: 30%;
+}
+
+input[type="text"] {
+    background-color: white;
+    background-image: url(img/person.svg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right;
+    background-position-x: 95%;
+}
+
+input[type="password"] {
+    background-color: white;
+    background-image: url(img/key.svg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right;
+    background-position-x: 95%;
+}
+
+input:focus {
+    background-image: none;
+}
+
+
+input::-moz-placeholder {
+    opacity: 1;
+    color: var(--lightgray);
+    transition: 0.5s;
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+a {
+    font-family: 'Source Sans Pro';
+}
+
+.button {
+    background: var(--blue);
+    border: none;
+    color: var(--white);
+    filter: drop-shadow(0 0.2rem 0.25rem var(--darkgray));
+    padding: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    border-radius: 4px;
+    margin-top: 1vh;
+    cursor: pointer;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+
+.button:visited {
+    color: var(--white);
+}
+
+.button:hover {
+    background: var(--darkblue);
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main h1 {
+    font-size: 56px;
+    color: var(--gray);
+    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
+}
+
+#profile_card {
+    width: 30%;
+    height: 50%;
+    background: white;
+    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile_card_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+}
+
+#profile_card_header_img {
+    margin: 0;
+    float: right;
+    padding-right: 1vh;
+    width: 50%;
+}
+#profile_card_header_img img{
+    width: 40%;
+    float: right;
+}
+
+#profile_card_header_name {
+    margin: 0;
+    padding-left: 1vh;
+    float: left;
+    width: 50%;
+}
+
+#profile_card_header_name h2 {
+    margin: 0;
+    padding: 0;
+}
