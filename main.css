@@ -48,7 +48,7 @@ main {
     animation-fill-mode: forwards;
 }
 
-#index_left {
+#index_main {
     background: var(--white);
     float: left;
     width: 100%;
@@ -61,21 +61,10 @@ main {
     flex-direction: column;
 }
 
-#index_left h3 {
+#index_main h3 {
     font-family: 'Source Sans Pro';
     color: gray;
     margin-bottom: 0;
-}
-
-#index_right {
-    float: right;
-    width: 70%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .index_photo {
@@ -276,6 +265,7 @@ a {
 .profile_content_menu_button:hover {
     background: var(--blue);
     color: var(--white);
+    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
 }
 
 .profile_content_menu_button:hover svg {

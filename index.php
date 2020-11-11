@@ -16,7 +16,7 @@
             rel="stylesheet">
     </head>
     <body>
-        <div id="index_left">
+        <div id="index_main">
             <img class="index_photo" src="img/illustrations/login.svg"/>
             <h3><center>Log in to access your profile</center></h3>
             <form id="index_form" action="login.php" method="post">
