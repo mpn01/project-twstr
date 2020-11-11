@@ -2,11 +2,12 @@
 
     session_start();
 
+    //jeżeli zmienne 'login' i 'pass' nie istnieją, przenosi odwiedzającego do index.php
     if(!isset($_POST['login']) || !isset($_POST['pass'])){
         header('Location: index.php');
         exit();
     }
-
+    //wymaga pliku connect.php(w którym zawarte są dane logowania do bazy danych)
     require_once "connect.php";
 
     $conn = @new mysqli($servername, $username, $password, $dbname);
@@ -17,16 +18,22 @@
         $login=$_POST['login'];
         $pass=$_POST['pass'];
 
+        //login i hasło są przetwarzane przez funkcje htmlentities która zapobiega tzw. "wstrzykiwaniu SQL"
+        //w skrócie zamienia znaczniki html na odpowiadające mu encje
         $login = htmlentities($login, ENT_QUOTES, "UTF-8");
         $pass = htmlentities($pass, ENT_QUOTES, "UTF-8");
 
+        //przetwarzanie loginu i hasła przez funkcję mysqli_real_escape_string, która zabezpiecza kod
+        //przed wstrzykiwaniem SQL. funkcja sprintf tworzy łańcuchy znaków powiązane z %s
         if($loginResult = @$conn->query(sprintf("SELECT * FROM users WHERE login='%s' && pass='%s'",
         mysqli_real_escape_string($conn, $login),
         mysqli_real_escape_string($conn, $pass)))){
             if($loginResult->num_rows > 0){
 
+                //jeśli dane do logwania są dobre, użytkownik otrzymuje status zalogowanego
                 $_SESSION['logged'] = true;
 
+                //pobieranie elementów z bazy danych, pasujących do tego użytkownika
                 $rows = $loginResult->fetch_assoc();
                 $_SESSION['id'] = $rows['id'];
                 $_SESSION['login'] = $rows['login'];
@@ -34,11 +41,15 @@
                 $_SESSION['email'] = $rows['email'];
                 $_SESSION['picture'] = $rows['picture'];
 
+                //usuwanie powiadomienia o złym loginie/haśle, jeżeli dane logowania pasują
                 unset($_SESSION['error']);
                 $loginResult->close();
 
                 header('Location: profile.php');
             } else {
+
+                //pokazywanie powiadomienia o złym  loginie/haśle,
+                //jeżeli nie pasują one do żadnego elementu bazy danych(wpisanego loginu lub hasła)
                 $_SESSION['error'] = '<div id="index_login_error">Wrong username or password</div>';
                 header('Location: index.php');
             }

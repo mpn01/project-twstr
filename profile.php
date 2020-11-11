@@ -1,5 +1,7 @@
 <?php
     session_start();
+
+    //sprawdzanie czy użytkownik jest zalogowany do profilu, jeśli nie, przenosi go do index.php
     if(!isset($_SESSION['logged'])){
         header('Location: index.php');
         exit();

@@ -1,4 +1,5 @@
 <?php
+    //wylogowywanie użytkownika
     session_start();
 
     session_unset();

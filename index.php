@@ -1,6 +1,7 @@
 <?php
     session_start();
 
+    //sprawdzanie czy użytkownik jest zalogowany, jeśli jest, przenosi go do profile.php
     if(isset($_SESSION['logged']) && ($_SESSION['logged'] == true)) {
         header('Location: profile.php');
         exit();
