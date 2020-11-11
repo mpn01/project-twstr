@@ -10,7 +10,7 @@
 
 <html>
     <head>
-        <title>Log in</title>
+        <title>Your profile/title>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" type="text/css" href="main.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
