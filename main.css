@@ -7,7 +7,8 @@
     --darkwhite: #fff2f2;
     --gray: #808080;
     --lightgray: #cac6c6;
-    --darkgray: #b4b0b080;
+    --darkgray: #545454;
+    --cloud: #F8F8F8;
 }
 
 ::selection {
@@ -49,7 +50,6 @@ body {
 #index_left h3 {
     font-family: 'Source Sans Pro';
     color: gray;
-    filter: drop-shadow(0 0.05rem 0.05rem var(--darkgray));
     margin-bottom: 0;
 }
 
@@ -66,7 +66,7 @@ body {
 
 .index_photo {
     width: 15%;
-    filter: drop-shadow(0 0.2rem 0.25rem var(--darkgray));
+    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
 }
 
 .index_register_link {
@@ -182,62 +182,87 @@ a {
     background: var(--darkblue);
 }
 
-main {
+#profile_background {
     width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+    height: 37%;
+    background: var(--cloud);
+}
+
+#profile_person {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    top: 22%;
 }
 
-main h1 {
-    font-size: 56px;
+#profile_person img {
+    filter: drop-shadow(0 0.2rem 0.25rem var(--gray));
+    width: 70%;
+}
+
+#profile_person h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 40px;
+    color: var(--darkgray);
+}
+
+.profile_person_username {
+    font-size: 20px;
     color: var(--gray);
-    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
 }
 
-#profile_card {
-    width: 30%;
-    height: 50%;
-    background: white;
-    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
-    border-radius: 4px;
+.profile_person_username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#profile_content {
+    background: var(--white);
+    width: 100%;
+    height: 63%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#profile_card_header {
+#profile_content_menu {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 25%;
+    margin-bottom: 5vh;
 }
 
-#profile_card_header_img {
-    margin: 0;
-    float: right;
-    padding-right: 1vh;
-    width: 50%;
+.profile_content_menu_button {
+    background: white;
+    color: var(--darkgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 0.2s;
+    padding: 1vh;
+    margin: 1vh;
+    width: 6%;
+    text-decoration: none;
 }
 
-#profile_card_header_img img {
-    width: 40%;
-    float: right;
+.profile_content_menu_button:hover {
+    background: var(--blue);
+    color: var(--white);
 }
 
-#profile_card_header_name {
-    margin: 0;
-    padding-left: 1vh;
-    float: left;
-    width: 50%;
-}
-
-#profile_card_header_name h2 {
-    margin: 0;
-    padding: 0;
+.profile_content_menu_button:hover svg {
+    stroke: var(--white);
 }
