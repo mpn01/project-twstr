@@ -71,12 +71,13 @@ body {
 
 .index_register_link {
     font-family: 'Source Sans Pro';
-    color: #808080;
+    color: var(--gray);
 }
 
 .index_register_link a {
-    color: gray;
+    color: var(--gray);
 }
+
 
 .index_register_link a:visited {
     color: gray;
@@ -265,4 +266,10 @@ a {
 
 .profile_content_menu_button:hover svg {
     stroke: var(--white);
+}
+
+@media screen and (max-width: 1655px) {
+    .profile_content_menu_button {
+        width: 9%;
+    }
 }
