@@ -45,7 +45,7 @@ body {
 
 main {
     opacity: 0.2;
-    animation: enter 1s;
+    animation: fadeIn 0.5s;
     animation-fill-mode: forwards;
 }
 
