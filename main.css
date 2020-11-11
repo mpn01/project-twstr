@@ -4,10 +4,10 @@
     --red: #d65555;
     /*--white: rgb(255, 247, 247);*/
     --white: #ffffff;
-    --darkwhite:  #fff2f2;
+    --darkwhite: #fff2f2;
     --gray: #808080;
     --lightgray: #cac6c6;
-    --darkgray:  #b4b0b080;
+    --darkgray: #b4b0b080;
 }
 
 ::selection {
@@ -82,7 +82,6 @@ body {
     color: gray;
 }
 
-
 #index_form {
     background: var(--white);
     border-radius: 4px;
@@ -128,7 +127,7 @@ input[type="text"] {
     background-color: white;
     background-image: url(img/person.svg);
     background-repeat: no-repeat;
-    background-size: 10%;
+    background-size: 8%;
     background-position: right;
     background-position-x: 95%;
 }
@@ -137,7 +136,7 @@ input[type="password"] {
     background-color: white;
     background-image: url(img/key.svg);
     background-repeat: no-repeat;
-    background-size: 10%;
+    background-size: 8%;
     background-position: right;
     background-position-x: 95%;
 }
@@ -145,7 +144,6 @@ input[type="password"] {
 input:focus {
     background-image: none;
 }
-
 
 input::-moz-placeholder {
     opacity: 1;
@@ -183,7 +181,6 @@ a {
 .button:hover {
     background: var(--darkblue);
 }
-
 
 main {
     width: 100%;
@@ -227,7 +224,8 @@ main h1 {
     padding-right: 1vh;
     width: 50%;
 }
-#profile_card_header_img img{
+
+#profile_card_header_img img {
     width: 40%;
     float: right;
 }
