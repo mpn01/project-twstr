@@ -23,7 +23,7 @@
                     <div id="profile_background">
                     </div>
                         <div id="profile_person">
-                            <img src="img/illustrations/male_avatar.svg"/>
+                            <img style="border: 10px solid #F8F8F8; border-radius: 50%;" src="img/illustrations/male_avatar.svg"/>
                             <h1>$_SESSION[name]</h1>
                             <span class="profile_person_username">@$_SESSION[login]</span>
                             </div>
@@ -61,7 +61,7 @@
                                 <line x1="6" y1="8.6" x2="4" y2="7.5" />
                               </svg>Other projects</a>
                                 </div>
-                            <a class='button' href='logout.php'>Logout</a>
+                                <a class='button' href='logout.php'>Logout</a>
                             </div>
 END
                     ?>
