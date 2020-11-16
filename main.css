@@ -293,3 +293,26 @@ a {
         bottom: 10%;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    input {
+        width: 50%;
+    }
+    
+    .index_photo {
+        width: 30%;
+        filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    input {
+        width: 100%;
+    }
+    
+    .index_photo {
+        width: 45%;
+        filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
+    }
+}
