@@ -13,15 +13,17 @@
     <head>
         <title>Welcome!</title>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="css/welcome.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
             rel="stylesheet">
     </head>
     <body>
-        <div id="index_main">
+        <div id="welcome_main">
+            <h1>You did it!</h1>
             <img class="index_photo" src="img/illustrations/high_five.svg"/>
-            <h2>You did it! Now you can log in to your account<a href="index.php">there</a></h2>
+            <h3>Now you can log in to your account <a href="index.php">there</a></h3>
         </div>
     </body>
 </html>

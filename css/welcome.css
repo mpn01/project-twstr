@@ -1,0 +1,27 @@
+#welcome_main {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#welcome_main img {
+    width: 30%;
+}
+
+#welcome_main h1, h3 {
+    font-family: 'Source Sans Pro';
+    color: gray;
+}
+
+#welocme_main a {
+    color: gray;
+}
+
+#welocme_main a:visited {
+    color: gray;
+}
