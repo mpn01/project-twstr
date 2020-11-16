@@ -146,6 +146,15 @@ input[type="password"] {
     background-position-x: 95%;
 }
 
+input[type="email"] {
+    background-color: white;
+    background-image: url(img/email.svg);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: right;
+    background-position-x: 95%;
+}
+
 input:focus {
     background-image: none;
 }
