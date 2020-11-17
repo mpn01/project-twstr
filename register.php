@@ -43,6 +43,7 @@
             $_SESSION['e_pass'] = "<div class='main_error'>Passwords don't match</div>";
         }
 
+        //hashowanie hasła
         $pass_hash = password_hash($pass1, PASSWORD_DEFAULT);
 
 
