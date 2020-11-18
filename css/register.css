@@ -46,3 +46,18 @@
 .register_login_link a:visited {
     color: gray;
 }
+
+@media screen and (max-width: 750px) {
+    #register_main img {
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+    }
+    #register_form {
+        width: 100%;
+    }
+    input {
+        width: 90%;
+    }
+
+}

@@ -2,12 +2,12 @@
     session_start();
 
     //sprawdzanie czy użytkownik jest zalogowany, jeśli jest, przenosi go do profile.php
-    if(!isset($_SESSION['register_complete'])) {
+    /* if(!isset($_SESSION['register_complete'])) {
         header('Location: index.php');
         exit();
     } else {
         unset($_SESSION['register_complete']);
-    }
+    }*/
 ?>
 <html>
     <head>
@@ -21,9 +21,10 @@
     </head>
     <body>
         <div id="welcome_main">
+            <div style="postion: relative; width: 50%; height: 5%; background: white;"></div>
             <h1>You did it!</h1>
             <img class="index_photo" src="img/illustrations/high_five.svg"/>
-            <h3>Now you can log in to your account <a href="index.php">there</a></h3>
+            <a class="button" href="index.php">Log in</a>
         </div>
     </body>
 </html>

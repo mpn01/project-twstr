@@ -64,3 +64,22 @@
     border-bottom: 1px solid var(--lightgray);
     font-weight: 500;
 }
+
+@media screen and (max-width: 1000px) {
+    input {
+        width: 50%;
+    }
+    .index_photo {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    input {
+        width: 100%;
+    }
+    .index_photo {
+        width: 38%;
+    }
+}

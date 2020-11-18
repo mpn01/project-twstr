@@ -149,39 +149,3 @@ a {
     border-bottom: 1px solid var(--lightgray);
     font-weight: 500;
 }
-
-@media screen and (max-width: 1655px) {
-    .profile_content_menu_button {
-        width: 9%;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    #profile_content {
-        position: absolute;
-        height:30%;
-        bottom: 10%;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    input {
-        width: 50%;
-    }
-    .index_photo {
-        width: 30%;
-        filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
-    }
-
-}
-
-@media screen and (max-width: 500px) {
-    input {
-        width: 100%;
-    }
-
-    .index_photo {
-        width: 45%;
-        filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
-    }
-}
