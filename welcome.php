@@ -21,9 +21,10 @@
     </head>
     <body>
         <div id="welcome_main">
-            <div style="postion: relative; width: 50%; height: 5%; background: white;"></div>
             <h1>You did it!</h1>
-            <img class="index_photo" src="img/illustrations/high_five.svg"/>
+            <h1>Now you can log in to your account</h1>
+            <div style="postion: absolute; width: 50%; height: 7%; background: white; z-index: 1;"></div>
+            <img src="img/illustrations/high_five.svg"/>
             <a class="button" href="index.php">Log in</a>
         </div>
     </body>

@@ -7,6 +7,23 @@
     }
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 #welcome_main {
     width: 100%;
     height: 100%;
@@ -19,7 +36,7 @@
 }
 
 #welcome_main img {
-    width: 30%;
+    width: 35%;
     z-index: 1;
     background: white;
 }
@@ -27,15 +44,35 @@
 #welcome_main h1{
     font-family: 'Source Sans Pro';
     color: var(--darkgray);
-    position: relative;
+    position: absolute;
     top: 10%;
-    animation: slideIn 0.5s;
+    animation: slideIn 0.5s, fadeOut 0.3s;
+    animation-delay: 0s, 1.5s;
     animation-fill-mode: forwards;
     z-index: -1;
 }
 
+#welcome_main h1:nth-child(2){
+    font-family: 'Source Sans Pro';
+    color: var(--darkgray);
+    position: absolute;
+    top: 10%;
+    animation: slideIn 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+
 a {
     font-weight: 400;
+}
+
+.button {
+    opacity: 0;
+    animation: fadeIn 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
 }
 
 @media screen and (max-width: 900px) {
