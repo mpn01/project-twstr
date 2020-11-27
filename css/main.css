@@ -111,7 +111,7 @@ a {
     background: var(--blue);
     border: none;
     color: var(--white);
-    filter: drop-shadow(0 0.2rem 0.25rem var(--darkgray));
+    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
     padding: 1vh;
     padding-left: 2vh;
     padding-right: 2vh;

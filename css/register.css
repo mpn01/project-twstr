@@ -47,17 +47,15 @@
     color: gray;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 500px) {
     #register_main img {
-        width: 100%;
-        position: absolute;
-        opacity: 0;
+        display: none;
     }
     #register_form {
         width: 100%;
     }
     input {
-        width: 90%;
+        width: 100%;
     }
 
 }
