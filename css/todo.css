@@ -1,0 +1,41 @@
+body {
+    background: var(--white);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#todo_main {
+    background: var(--white);
+    display: grid;
+}
+
+#todo_main_task {
+    background: var(--cloud);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(130, 130, 130, 0.25);
+    margin: 1vh;
+    width: 20%;
+    font-family: 'Source Sans Pro';
+    padding: 1vh;
+}
+
+#todo_main_task h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.todo_main_task_title {
+    width: 100%;
+    font-family: 'Source Sans Pro';
+    position: relative;
+}
+
+.todo_main_task_title::before {
+    content: '';
+    position: absolute;
+    background: var(--blue);
+    left: -1vh;
+    width: 2%;
+    height: 100%;
+}
