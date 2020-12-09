@@ -33,6 +33,7 @@
                     $_SESSION['logged'] = true;
 
                     //pobieranie elementów z bazy danych, pasujących do tego użytkownika
+                    $_SESSION['pass'] = $rows['pass'];
                     $_SESSION['id'] = $rows['id'];
                     $_SESSION['login'] = $rows['login'];
                     $_SESSION['name'] = $rows['name'];

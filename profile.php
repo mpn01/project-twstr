@@ -31,7 +31,7 @@
                             </div>
                         <div id="profile_content">
                             <div id="profile_content_menu">
-                            <a class="profile_content_menu_button"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#545454" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <a class="profile_content_menu_button" href="calendar.php"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#545454" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <rect x="4" y="5" width="16" height="16" rx="2" />
                             <line x1="16" y1="3" x2="16" y2="7" />
@@ -49,11 +49,17 @@
                                 <line x1="11" y1="12" x2="20" y2="12" />
                                 <line x1="11" y1="18" x2="20" y2="18" />
                               </svg>Todo list</a>
-                                <a class="profile_content_menu_button" href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#545454" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <a class="profile_content_menu_button" href="settings.php"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#545454" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                 <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
                                 <circle cx="12" cy="12" r="3" />
                               </svg>Settings</a>
+                              <a class="profile_content_menu_button" href="contact.php"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#545454" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <circle cx="12" cy="12" r="9" />
+                              <line x1="12" y1="17" x2="12" y2="17.01" />
+                              <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
+                            </svg>Help</a>
                                 </div>
                                 <a class='button' href='logout.php'>Logout</a>
                             </div>

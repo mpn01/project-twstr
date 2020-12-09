@@ -6,6 +6,35 @@ body {
     padding: 0;
 }
 
+a {
+    margin-top: 5vh;
+    font-family: 'Source Sans Pro';
+    color: var(--gray);
+    text-decoration: underline;
+    text-decoration-color: var(--gray);
+    cursor: pointer;
+}
+form {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 35%;
+}
+
+input[type="text"] {
+    background-image: url(../img/letters-case.svg);
+}
+
+input:focus {
+    background-image: none;
+}
+
+
 #todo_main {
     padding: 5vh;
     background: var(--white);
@@ -93,31 +122,4 @@ body {
 
 #add-task_img img {
     width: 80%;
-}
-a {
-    margin-top: 5vh;
-    font-family: 'Source Sans Pro';
-    color: var(--gray);
-    text-decoration: underline;
-    text-decoration-color: var(--gray);
-    cursor: pointer;
-}
-form {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-input {
-    width: 35%;
-}
-
-input[type="text"] {
-    background-image: url(../img/letters-case.svg);
-}
-
-input:focus {
-    background-image: none;
 }

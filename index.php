@@ -33,5 +33,11 @@
             if(isset($_SESSION['error'])) echo $_SESSION['error'];
             ?>
         </div>
+        <script type="text/javascript">
+        function showInfo() {
+    alert("Strona nie jest w całości funkcjonalna(nie działa kalendarz oraz usuwanie/zaznaczanie jako zrobione zadania, formularz kontaktowy oraz zakładka z ustawieniami także jeszcze nie działają), ale posiada wszystko co potrzebne jest do zaliczenia projektu")
+}
+showInfo();
+    </script>
     </body>
 </html>

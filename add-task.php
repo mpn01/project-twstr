@@ -1,6 +1,13 @@
 <?php
     session_start();
     require_once "connect.php";
+
+        //sprawdzanie czy użytkownik jest zalogowany do profilu, jeśli nie, przenosi go do index.php
+        if(!isset($_SESSION['logged'])){
+            header('Location: index.php');
+            exit();
+        }
+
     $userId = $_SESSION['id'];
 
     if(isset($_POST['title'])){
@@ -27,6 +34,8 @@
         echo '<br/>Developer info: '.$e; // wyłączyć przy wrzucaniu na prawdziwy serwer
     }
 }
+
+$conn->close();
 ?>
 <html lang="en">
 <head>

@@ -1,6 +1,13 @@
 <?php
     session_start();
+
+        //sprawdzanie czy użytkownik jest zalogowany do profilu, jeśli nie, przenosi go do index.php
+        if(!isset($_SESSION['logged'])){
+            header('Location: index.php');
+            exit();
+        }
 ?>
+<html>
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,10 +53,14 @@
         echo "Server error. Sorry for problems. Please comeback later.";
         echo '<br/>Developer info: '.$e; // wyłączyć przy wrzucaniu na prawdziwy serwer
     }
+$conn->close();
 
     ?>
     </div>
-    <footer><a class="button" href="add-task.php">Add task</a></footer>
+    <footer>
+            <a class="button" href="add-task.php">Add task</a>
+            <a onclick="goBack()">Go back</a>
+    </footer>
     <script src="js/main.js"></script>
     <script src="js/todo.js"></script>
 </body>

@@ -9,6 +9,7 @@
     --darkgray: #545454;
     --cloud: #F8F8F8;
     --yellow: #EAC435;
+    --green: #00b341;
 }
 
 ::selection {
@@ -53,11 +54,15 @@ main {
 footer {
     position: fixed;
     width: 100%;
-    height: 10%;
     bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+h1, h2, h3{
+    color: var(--darkgray);
 }
 
 input {
@@ -74,6 +79,15 @@ input {
 input[type="text"] {
     background-color: white;
     background-image: url(../img/person.svg);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: right;
+    background-position-x: 95%;
+}
+
+input[type="title"] {
+    background-color: white;
+    background-image: url(../img/letters-case.svg);
     background-repeat: no-repeat;
     background-size: 8%;
     background-position: right;
@@ -130,8 +144,41 @@ input:focus::-moz-placeholder {
     opacity: 0;
 }
 
+textarea {
+    resize: none;
+    width: 30%;
+    border-radius: 2px;
+    border: 1px solid var(--lightgray);
+    margin: 1vh;
+    padding: 1vh;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+}
+
+textarea::placeholder {
+    color: var(--gray);
+}
+
+textarea:focus::placeholder {
+    opacity: 0;
+}
+
 a {
     font-family: 'Source Sans Pro';
+    color: var(--gray);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
+    color: var(--gray);
+}
+
+label {
+    color: var(--lightgray);
+    width: 30%;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .button {
@@ -163,6 +210,24 @@ a {
     background: var(--white);
     font-family: 'Source Sans Pro';
     color: var(--red);
+    padding-bottom: 1vh;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 1%;
+    opacity: 1;
+    animation: rollIn 0.8s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--lightgray);
+    font-weight: 500;
+}
+
+.main_succes {
+    background: var(--white);
+    font-family: 'Source Sans Pro';
+    color: var(--green);
     padding-bottom: 1vh;
     justify-content: center;
     flex-direction: column;

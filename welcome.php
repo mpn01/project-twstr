@@ -2,12 +2,12 @@
     session_start();
 
     //sprawdzanie czy użytkownik jest zalogowany, jeśli jest, przenosi go do profile.php
-    /* if(!isset($_SESSION['register_complete'])) {
+     if(!isset($_SESSION['register_complete'])) {
         header('Location: index.php');
         exit();
     } else {
         unset($_SESSION['register_complete']);
-    }*/
+    }
 ?>
 <html>
     <head>

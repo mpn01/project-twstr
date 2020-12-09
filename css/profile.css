@@ -90,18 +90,6 @@
 }
 
 
-.profile_content_menu_button:nth-child(1) {
-    color: var(--lightgray);
-}
-.profile_content_menu_button:nth-child(1):hover {
-    background: var(--white);
-    filter: drop-shadow(0 0.2rem 0.25rem var(--white));
-}
-
-.profile_content_menu_button:nth-child(1) svg{
-    stroke: var(--lightgray);
-}
-
 
 @media screen and (max-width: 1655px) {
     .profile_content_menu_button {
