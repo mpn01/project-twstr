@@ -22,18 +22,11 @@
     filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
 }
 
-.index_register_link {
+#index_register_link {
     font-family: 'Source Sans Pro';
     color: var(--gray);
 }
 
-.index_register_link a {
-    color: var(--gray);
-}
-
-.index_register_link a:visited {
-    color: gray;
-}
 
 #index_form {
     background: var(--white);
