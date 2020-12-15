@@ -28,16 +28,12 @@
                 <input type="password" name="pass" placeholder=" password" required/>
                 <button class="button" type="submit">Log in</button>
             </form>
-            <span class="index_register_link"><p>If you don't have an account, <a href="register.php">register here</a></p></span>
+            <p id="index_register_link">If you don't have an account, <a href="register.php">register here</a></p>
             <?php
             if(isset($_SESSION['error'])) echo $_SESSION['error'];
             ?>
         </div>
         <script type="text/javascript">
-        function showInfo() {
-    alert("Strona nie jest w całości funkcjonalna(nie działa kalendarz oraz usuwanie/zaznaczanie jako zrobione zadania, formularz kontaktowy oraz zakładka z ustawieniami także jeszcze nie działają), ale posiada wszystko co potrzebne jest do zaliczenia projektu")
-}
-showInfo();
     </script>
     </body>
 </html>
