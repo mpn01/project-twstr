@@ -8,7 +8,7 @@
 
         if(strlen($username)<3 || strlen($username)>20){
             $form_complete = false;
-            $_SESSION['e_username'] = "<div class='main_error'>Your username should have characters between 3 and 20</div>";
+            $_SESSION['e_username'] = "<div class='main_error'>Your username should have length between 3 and 20</div>";
         }
         if(!ctype_alnum($username)){
             $form_complete = false;
@@ -63,7 +63,7 @@
                 $email_check = $result_email->num_rows;
                 if($email_check>0){
                     $form_complete = false;
-                    $_SESSION['e_email'] = "<div class='main_error'>Account with this e-mail exist</div>";
+                    $_SESSION['e_email'] = "<div class='main_error'>Account with this e-mail already exist</div>";
                 }
 
                 //Sprawdzanie, czy użytkownik o podanym emailu istniaje
