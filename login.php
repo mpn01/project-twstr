@@ -47,12 +47,12 @@
                     header('Location: profile.php');
                 } else {
                     //powiadomienie o złym haśle
-                    $_SESSION['error'] = '<div id="index_login_error">Wrong password</div>';
+                    $_SESSION['error'] = '<div class="main_error">Wrong password</div>';
                     header('Location: index.php');
                 }
             } else {
                 //powiadomienie o złym  loginie
-                $_SESSION['error'] = '<div id="index_login_error">Account not found</div>';
+                $_SESSION['error'] = '<div class="main_error">Account not found</div>';
                 header('Location: index.php');
             }
         };
