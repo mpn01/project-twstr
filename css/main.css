@@ -169,6 +169,8 @@ a {
     color: var(--gray);
     cursor: pointer;
     text-decoration: underline;
+    text-decoration-color: var(--blue);
+    text-decoration-thickness: 1.5px;
 }
 
 a:visited {
@@ -237,6 +239,16 @@ thead tr:hover {
 .button:hover {
     background: var(--darkblue);
 }
+
+.button_goback {
+    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
+}
+
+.button_goback:hover svg {
+    stroke: var(--darkblue);
+}
+
+
 
 .main_error {
     background: var(--white);
