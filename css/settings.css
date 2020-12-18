@@ -33,6 +33,7 @@ label {
 }
 
 #settings-main-left {
+    display: none;
     width: 50%;
     height: 100%;
     display: flex;

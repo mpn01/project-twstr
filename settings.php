@@ -99,21 +99,17 @@
         }
     ?>
     <?php
-        echo "<div id='settings-main-left'>";
-        echo "<img src='img/illustrations/male_avatar.svg'/>";
-        echo "<button class='button'>Change profile picture</button>";
-        echo "</div>";
         echo "<div id='settings-main-right'>";
         echo "<h2>Change your profile details</h2>";
-        echo "<form method='post'>";
-            echo "<label for='email' id='label3'>Login</label>";
-            echo "<input type='text' name='loginChanged' value='".$userLogin."' disabled/><br/>";;
-            echo "<label for='name' id='label1'>Name</label>";
-            echo "<input type='text' name='nameChanged' value='".$userName."' required/><br/>";
-            echo "<label for='login' id='label2'>E-mail</label>";
-            echo "<input type='email' name='emailChanged' value='".$userEmail."' required/><br/>";
-            echo "<button style='margin-top: 5vh;'class='button' type='submit' name='submit' >Save profile</button>";
-        echo "</form>";
+            echo "<form method='post'>";
+                echo "<label for='email' id='label3'>Login</label>";
+                echo "<input type='text' name='loginChanged' value='".$userLogin."' disabled/><br/>";;
+                echo "<label for='name' id='label1'>Name</label>";
+                echo "<input type='text' name='nameChanged' value='".$userName."' required/><br/>";
+                echo "<label for='login' id='label2'>E-mail</label>";
+                echo "<input type='email' name='emailChanged' value='".$userEmail."' required/><br/>";
+                echo "<button style='margin-top: 5vh;'class='button' type='submit' name='submit' >Save profile</button>";
+            echo "</form>";
         echo "</div>";
 
         if(isset($_SESSION['settings_error'])){
@@ -131,7 +127,7 @@
     ?>
     <script src="js/settings.js"></script>
     <script src="js/main.js"></script>
-    <footer><a class="button" style="margin-bottom: 3vh;" href='profile.php' >Go back</a></footer>
+    <footer><a class="button_goback" style="margin-bottom: 3vh;" href='profile.php'><img src='img/arrow-left-circle.svg'/></a></footer>
     </div>
 </body>
 </html>
