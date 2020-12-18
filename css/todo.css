@@ -8,11 +8,6 @@ body {
 
 a {
     margin-top: 5vh;
-    font-family: 'Source Sans Pro';
-    color: var(--gray);
-    text-decoration: underline;
-    text-decoration-color: var(--gray);
-    cursor: pointer;
 }
 form {
     width: 60%;
