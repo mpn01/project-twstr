@@ -61,7 +61,7 @@
                               <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
                             </svg>Help</a>
                                 </div>
-                                <a class='button' href='logout.php'>Logout</a>
+                                <a class='button' href='logout.php'><img src='img/icons/logout.svg'>&nbspLogout</a>
                             </div>
 END;
                 if(isset($_SESSION['settings_success'])){

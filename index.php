@@ -26,7 +26,7 @@
                 <input type="text" name="login" placeholder=" username" required/>
                 <!-- <label for="pass"><center><img width="60%" src="img/key.svg"/></center></label> -->
                 <input type="password" name="pass" placeholder=" password" required/>
-                <button class="button" type="submit">Log in</button>
+                <button class="button" type="submit"><img src="img/icons/login.svg">&nbspLog in</button>
             </form>
             <p id="index_register_link">If you don't have an account, <a href="register.php">register here</a></p>
             <?php

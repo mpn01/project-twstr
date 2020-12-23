@@ -85,8 +85,10 @@
                     $queryUpdateProfile = "UPDATE users SET name='$userNameChanged', email='$userEmailChanged' WHERE id='$userId'";
                     if($settingsComplete == true){
                         if($conn->query($queryUpdateProfile)){
-                            header("Location: profile.php");
-                            $_SESSION['settings_success'] = '<div class="main_success">Your account has been updated</div>';
+                            header("Location: profile.php"); //przenosi do strony profilu
+                            $_SESSION['name'] = $userNameChanged;  //zmienia zmienną sesyjną na wartosći wpisane w formularzu
+                            $_SESSIONN['email'] = $userEmail; // jak wyżej
+                            $_SESSION['settings_success'] = '<div class="main_success">Your account has been updated</div>'; //tworzy zmienną sesyjną z powiadomieniem o pomyślnej zmianie danych
                         } else {
                             throw new Exception(mysqli_connect_error());
                         }
@@ -108,7 +110,7 @@
                 echo "<input type='text' name='nameChanged' value='".$userName."' required/><br/>";
                 echo "<label for='login' id='label2'>E-mail</label>";
                 echo "<input type='email' name='emailChanged' value='".$userEmail."' required/><br/>";
-                echo "<button style='margin-top: 5vh;'class='button' type='submit' name='submit' >Save profile</button>";
+                echo "<button style='margin-top: 5vh;'class='button' type='submit' name='submit'><img src='img/icons/disc-floppy.svg'>&nbspSave profile</button>";
             echo "</form>";
         echo "</div>";
 
@@ -125,9 +127,11 @@
             unset($_SESSION['settings_name_error']);
         };
     ?>
+    <footer>
+        <a class="button" style="margin-bottom: 3vh;" href='profile.php'><img src='img/icons/arrow-back-up.svg'>&nbspGo back</a>
+    </footer>
     <script src="js/settings.js"></script>
     <script src="js/main.js"></script>
-    <footer><a class="button_goback" style="margin-bottom: 3vh;" href='profile.php'><img src='img/arrow-left-circle.svg'/></a></footer>
     </div>
 </body>
 </html>

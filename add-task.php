@@ -33,9 +33,10 @@
         echo "Server error. Sorry for problems. Please comeback later.";
         echo '<br/>Developer info: '.$e; // wyłączyć przy wrzucaniu na prawdziwy serwer
     }
+    $conn->close();
 }
 
-$conn->close();
+
 ?>
 <html lang="en">
 <head>
@@ -55,7 +56,7 @@ $conn->close();
             <input type="text" name="title" placeholder="Title"/>
             <input type="date" name="date"/>
             <input type="time" name="time" placeholder="choose a time" min="00:00" max="23:59"/>
-            <button class="button" type="submit">Add</button>
+            <button class="button" type="submit"><img src="img/icons/plus-circle.svg">&nbspAdd</button>
             <a onclick="goBack()">Go back</a>
         </form>
         <div id="add-task_img">

@@ -58,8 +58,8 @@ $conn->close();
     ?>
     </div>
     <footer>
-            <a class="button" href="add-task.php">Add task</a>
-            <a onclick="goBack()">Go back</a>
+            <a class="button" href="add-task.php"><img src="img/icons/plus-circle.svg">&nbspAdd task</a>
+            <a class="button" style="margin-bottom: 3vh;" href='profile.php'><img src='img/icons/arrow-back-up.svg'>&nbspGo back</a>
     </footer>
     <script src="js/main.js"></script>
     <script src="js/todo.js"></script>

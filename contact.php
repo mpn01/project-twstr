@@ -24,9 +24,11 @@
         <input type="title" name="title" placeholder="Title"><br/>
         <input type="email" name="email" placeholder="E-mail"><br/>
         <textarea placeholder="Your message"></textarea><br/>
-        <button class="button" type="submit">Send</button>
+        <button class="button" type="submit"><img src="img/icons/send.svg">&nbspSend</button>
     </form>
-    <a style="margin-top: 5vh;" onclick="goBack()">Go back</a>
+    <footer>
+        <a class="button" style="margin-bottom: 3vh;" href='profile.php'><img src='img/icons/arrow-back-up.svg'>&nbspGo back</a>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
