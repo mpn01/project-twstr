@@ -1,0 +1,106 @@
+#profile_background {
+    width: 100%;
+    height: 37%;
+    background-image: url(../../img/backgrounds/mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cloud);
+    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
+}
+
+#profile_person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    top: 22%;
+}
+
+#profile_person img {
+    /* filter: drop-shadow(0 0.2rem 0.25rem var(--gray)); */
+    width: 70%;
+}
+
+#profile_person h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 40px;
+    color: var(--darkgray);
+}
+
+.profile_person_username {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.profile_person_username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#profile_content {
+    background: var(--white);
+    width: 100%;
+    height: 63%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile_content_menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.profile_content_menu_button {
+    background: white;
+    color: var(--darkgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 0.2s;
+    padding: 1vh;
+    margin: 1vh;
+    width: 6%;
+    text-decoration: none;
+}
+
+.profile_content_menu_button:hover {
+    background: var(--blue);
+    color: var(--white);
+    filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
+}
+
+.profile_content_menu_button:hover svg {
+    stroke: var(--white);
+}
+
+
+
+@media screen and (max-width: 1655px) {
+    .profile_content_menu_button {
+        width: 9%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #profile_content {
+        position: absolute;
+        height:30%;
+        bottom: 10%;
+    }
+}
