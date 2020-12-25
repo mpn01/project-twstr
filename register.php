@@ -115,7 +115,7 @@
                 <input type="text" name="username" placeholder=" username" required/>
                 <input type="email" name="email" placeholder=" email" required/>
                 <input type="password" name="pass1" placeholder=" password" required/>
-                <input type="password" name="pass2" placeholder=" again password" required/>
+                <input type="password" name="pass2" placeholder=" repeat password" required/>
                 <input type="checkbox" name="rules" required><span class="register_login_link">I accept <a href="rules.html">rules</a></span>
                 <button class="button" type="submit" >Register</button>
                 <span class="register_login_link">Already have account? <a href="index.php">Log in there</a></span>

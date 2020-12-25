@@ -47,7 +47,7 @@
                     header('Location: profile.php');
                 } else {
                     //powiadomienie o złym haśle
-                    $_SESSION['error'] = '<div class="main_error">Wrong password</div>';
+                    $_SESSION['error'] = '<div class="main_error">You typed a wrong password</div>';
                     header('Location: index.php');
                 }
             } else {

@@ -1,2 +1,4 @@
 # scss files
 styles/scss/
+# .css.map files
+styles/css/*.map
