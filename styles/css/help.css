@@ -16,14 +16,13 @@ header h3 {
   margin-top: 0;
 }
 
-#help_menu {
+.help_menu {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.help_menu_button {
+.help_menu__button {
   background: white;
   color: var(--darkgray);
   display: flex;
@@ -36,14 +35,12 @@ header h3 {
   margin: 1vh;
   text-decoration: none;
 }
-
-.help_menu_button:hover {
+.help_menu__button:hover {
   background: var(--blue);
   color: var(--white);
   filter: drop-shadow(0 0.2rem 0.25rem var(--lightgray));
 }
-
-.help_menu_button:hover svg {
+.help_menu__button:hover svg {
   stroke: var(--white);
 }
 
