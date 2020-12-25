@@ -36,6 +36,7 @@
                 $userName = $_SESSION['name'];
                 $userLogin = $_SESSION['login'];
                 $userEmail = $_SESSION['email'];
+                $userPass = $_SESSION['pass'];
 
 
                 //jeżeli zmienna się utworzy, zostaną wykonane instrukcje niżej
@@ -110,6 +111,7 @@
                 echo "<input type='text' name='nameChanged' value='".$userName."' required/><br/>";
                 echo "<label for='login' id='label2'>E-mail</label>";
                 echo "<input type='email' name='emailChanged' value='".$userEmail."' required/><br/>";
+                echo "<p style='color: var(--gray);'>Want to change your password? <a href='changepassword.php'>Click here</a></p>";
                 echo "<button style='margin-top: 5vh;'class='button' type='submit' name='submit'><img src='img/icons/disc-floppy.svg'>&nbspSave profile</button>";
             echo "</form>";
         echo "</div>";

@@ -68,6 +68,10 @@ END;
                     echo $_SESSION['settings_success'];
                     unset($_SESSION['settings_success']);
                 };
+                if(isset($_SESSION['pass_changed_success'])){
+                    echo $_SESSION['pass_changed_success'];
+                    unset($_SESSION['pass_changed_success']);
+                };
                     ?>
         </main>
     </body>
